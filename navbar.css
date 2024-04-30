@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: o;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.small {
+    display: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    /* background-color: grey; */
+
+}
+
+button {
+    border: none;
+    padding: o.4rem;
+    display: none;
+}
+
+.logo {
+    font-size: 2rem;
+    background: -o-linear-gradient(45deg, red, green);
+    color: transparent;
+    background-clip: text;
+    animation-name: animeText;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+
+@media(max-width:576px) {
+    button {
+        display: block;
+    }
+}
+
+@keyframes animeText {
+    0% {
+        background-size: 0 0;
+    }
+
+    50% {
+        backgroung-size: 100% 100%;
+
+    }
+
+    75% {
+        backgroung-size: 100% 100%;
+    }
+
+    /* 100{
+        backgroung-size:0 0;
+    }*/
+}
